@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <header>
+        <h1>Weather API</h1>
+        <div id="form-container">
+            <form>
+                <label for="input"></label>
+                <input id="input" name="input" placeholder="Enter City or Zip Code" type="text" />
+                <input type="button" value="Find" onclick="getNewLocation()" />
+            </form>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <section id="display">
+                <h1 id="location"></h1>
+                <div id="weather-container">
+                    <img id="icon" />
+                    <h1 id="temp"></h1>
+                    <p id="min-max"></p>
+                </div>
+                <p id="feels"></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Dominic Mastrocola 2020&copy;</p>
+    </footer>
+</body>
+
+</html>
